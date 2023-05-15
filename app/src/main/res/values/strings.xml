@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CSTech</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="your_credit_score_is">Your credit score is</string>
+    <string name="out_of_700">out of 700</string>
+</resources>
