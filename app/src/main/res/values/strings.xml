@@ -4,4 +4,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="your_credit_score_is">Your credit score is</string>
     <string name="out_of_700">out of 700</string>
+    <string name="details">Details</string>
+    <string name="your_short_term_debt_is">Your short term debt is: £%s</string>
+    <string name="your_long_term_debt_is">Your long term debt is: £%s</string>
 </resources>

@@ -18,6 +18,7 @@ class DonutFragment : Fragment() {
     lateinit var donutScore: TextView
     lateinit var progressBar: ProgressBar
     lateinit var donut: FrameLayout
+    lateinit var bundle: Bundle
 
     private val donutViewModel: DonutViewModel by viewModels()
 
@@ -37,8 +38,6 @@ class DonutFragment : Fragment() {
         progressBar = view.findViewById(R.id.progress)
         donut = view.findViewById(R.id.donut)
 
-        var bundle: Bundle
-
         donutViewModel.donutData.observe(viewLifecycleOwner) {
             val score = it.creditReportInfo.score
             donutScore.text = score.toString()
@@ -51,7 +50,7 @@ class DonutFragment : Fragment() {
 
         donut.setOnClickListener {
                 view ->
-            view.findNavController().navigate(R.id.navigate_to_details)
+            view.findNavController().navigate(R.id.navigate_to_details, bundle)
         }
     }
 
